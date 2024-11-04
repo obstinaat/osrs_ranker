@@ -1,0 +1,9 @@
+{"username": Letharg, "total": 3813, "skilling": 954, "minigamesClues": 123, "pvm": 2736}
+
+{
+	"minigamesClues": 123,
+	"pvm": 2736,
+	"skilling": 954,
+	"total": 3813,
+	"username": "Letharg"
+}
