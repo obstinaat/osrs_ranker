@@ -15,7 +15,7 @@ use std::path::Path;
 
 const HISCORES_URL_BASE: &str = "https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=";
 const FILE_NAME: &str = "config/usernames.txt";
-const OUTPUT_FILE: &str = "out/output.txt";
+const OUTPUT_FILE: &str = "out/output.tex";
 
 //Weights are subject to change; preferably configurable for each different entry, with custom milestones and custom point counts
 //additionally it would be nice if milestones after level 99 were implemented, such as 25m xp. 
@@ -96,7 +96,11 @@ enum Rank {
     Diamond,
     Dragonstone,
     Onyx,
-    Zenyte
+    Zenyte,
+    Death,
+    Blood,
+    Soul,
+    Wrath
 }
 
 async fn get_hiscores(username: &str) -> Result<String, Error> {
@@ -123,7 +127,8 @@ fn calc_points(score: isize, milestones: &Vec<Milestone>) -> isize {
         } else {
             //Points per kill
             //this should really be refactored.
-            points += ((score / (milestone.1 * (milestone.0 * -1))) as isize) * 2
+            points += ((score as f32 / (milestone.1) as f32).floor() as isize) * 2;
+            return points
         }
         points += milestone.1;
     }   
@@ -245,15 +250,19 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
 
 fn evaluate_rank(points: &isize) -> Rank {
     match points{
-        n if n < &0 => Rank::Unranked,
-        0..1200 => Rank::RedTopaz,
-        1200 .. 2500 => Rank::Sapphire,
-        2500 .. 4000 => Rank :: Emerald,
-        4000 .. 5500 => Rank::Ruby,
-        5500 .. 7500 => Rank::Diamond,
-        7500 .. 10000 => Rank:: Dragonstone,
-        10_000 .. 13000 => Rank::Onyx,
-        _ => Rank::Zenyte
+        n if n < &1 => Rank::Unranked,
+        0..200 => Rank::RedTopaz,
+        200 .. 500 => Rank::Sapphire,
+        500 .. 750 => Rank :: Emerald,
+        750 .. 1000 => Rank::Ruby,
+        1000 .. 1500 => Rank::Diamond,
+        1500 .. 2000 => Rank:: Dragonstone,
+        2000 .. 3000 => Rank::Onyx,
+        3000 .. 4000 => Rank::Zenyte,
+        4000 .. 5000 => Rank::Death,
+        5000 .. 6000 => Rank::Blood,
+        6000 .. 8000 => Rank::Soul,
+        _ => Rank::Wrath
     }
 }
 

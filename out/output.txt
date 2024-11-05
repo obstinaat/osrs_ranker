@@ -6,50 +6,50 @@
 \begin{tabular}{|l|r|r|r|r|l|}
 \hline
 \textbf{Username} & \textbf{Total} & \textbf{Skilling} & \textbf{Clues and Activities} & \textbf{PVM} & \textbf{Fe Nixes Rank} \\ \hline
-"LivEviL K" & 6067 & 2056 & 280 & 3731 & Diamond \\ \hline
-"Squampton" & 5439 & 1665 & 349 & 3425 & Ruby \\ \hline
-"grn bussin" & 5291 & 2985 & 280 & 2026 & Ruby \\ \hline
-"Letharg" & 5156 & 3083 & 232 & 1841 & Ruby \\ \hline
-"Grimy Bryn" & 4561 & 1955 & 218 & 2388 & Ruby \\ \hline
-"LimeFIT" & 3372 & 1674 & 155 & 1543 & Emerald \\ \hline
-"FerrumElite" & 3178 & 1497 & 267 & 1414 & Emerald \\ \hline
-"erknn" & 2584 & 1198 & 238 & 1148 & Emerald \\ \hline
-"WsInTheShat" & 2531 & 1105 & 202 & 1224 & Emerald \\ \hline
-"Catalystt" & 2324 & 1316 & 146 & 862 & Sapphire \\ \hline
-"BlazedMilk" & 2100 & 898 & 182 & 1020 & Sapphire \\ \hline
-"5tuns" & 1963 & 881 & 249 & 833 & Sapphire \\ \hline
-"TheWr0ngname" & 1853 & 668 & 97 & 1088 & Sapphire \\ \hline
-"Decade Sober" & 1833 & 943 & 257 & 633 & Sapphire \\ \hline
-"m0nkf1sh" & 1599 & 795 & 170 & 634 & Sapphire \\ \hline
-"Fe mowenthu" & 1254 & 464 & 154 & 636 & Sapphire \\ \hline
-"IM RuneHoon" & 1194 & 606 & 178 & 410 & RedTopaz \\ \hline
-"g humbie" & 1121 & 573 & 111 & 437 & RedTopaz \\ \hline
-"AelvarB" & 1017 & 442 & 171 & 404 & RedTopaz \\ \hline
-"lron Harry" & 931 & 647 & 64 & 220 & RedTopaz \\ \hline
-"ironpmb" & 868 & 342 & 149 & 377 & RedTopaz \\ \hline
-"Complex Fire" & 863 & 300 & 155 & 408 & RedTopaz \\ \hline
-"Addict4269" & 839 & 441 & 148 & 250 & RedTopaz \\ \hline
-"Feyral" & 805 & 336 & 129 & 340 & RedTopaz \\ \hline
-"Zerotonine" & 760 & 535 & 129 & 96 & RedTopaz \\ \hline
-"Rorkum" & 744 & 372 & 164 & 208 & RedTopaz \\ \hline
-"Maylody" & 712 & 469 & 31 & 212 & RedTopaz \\ \hline
-"CosmicStairs" & 679 & 287 & 306 & 86 & RedTopaz \\ \hline
-"7800X3D" & 613 & 413 & 53 & 147 & RedTopaz \\ \hline
-"IronJethide" & 606 & 225 & 127 & 254 & RedTopaz \\ \hline
-"Optimel" & 605 & 226 & 147 & 232 & RedTopaz \\ \hline
-"ThrillxAgony" & 557 & 277 & 131 & 149 & RedTopaz \\ \hline
-"Windows Grp" & 553 & 292 & 83 & 178 & RedTopaz \\ \hline
-"nEtKeEpEr" & 527 & 151 & 28 & 348 & RedTopaz \\ \hline
-"Kheldwin" & 505 & 207 & 151 & 147 & RedTopaz \\ \hline
+"LivEviL K" & 6069 & 2056 & 280 & 3733 & Officer \\ \hline
+"Squampton" & 5441 & 1665 & 351 & 3425 & Zenyte \\ \hline
+"grn bussin" & 5291 & 2985 & 280 & 2026 & Zenyte \\ \hline
+"Letharg" & 5156 & 3083 & 232 & 1841 & Zenyte \\ \hline
+"Grimy Bryn" & 4561 & 1955 & 218 & 2388 & Onyx \\ \hline
+"LimeFIT" & 3372 & 1674 & 155 & 1543 & Dragonstone \\ \hline
+"FerrumElite" & 3178 & 1497 & 267 & 1414 & Dragonstone \\ \hline
+"erknn" & 2586 & 1198 & 240 & 1148 & Diamond \\ \hline
+"WsInTheShat" & 2531 & 1105 & 202 & 1224 & Diamond \\ \hline
+"Catalystt" & 2324 & 1316 & 146 & 862 & Diamond \\ \hline
+"BlazedMilk" & 2100 & 898 & 182 & 1020 & Diamond \\ \hline
+"5tuns" & 1983 & 891 & 249 & 843 & Ruby \\ \hline
+"TheWr0ngname" & 1853 & 668 & 97 & 1088 & Ruby \\ \hline
+"Decade Sober" & 1833 & 943 & 257 & 633 & Ruby \\ \hline
+"m0nkf1sh" & 1599 & 795 & 170 & 634 & Ruby \\ \hline
+"Fe mowenthu" & 1260 & 464 & 154 & 642 & Emerald \\ \hline
+"IM RuneHoon" & 1196 & 606 & 180 & 410 & Emerald \\ \hline
+"g humbie" & 1123 & 573 & 111 & 439 & Emerald \\ \hline
+"AelvarB" & 1017 & 442 & 171 & 404 & Emerald \\ \hline
+"lron Harry" & 931 & 647 & 64 & 220 & Sapphire \\ \hline
+"ironpmb" & 872 & 342 & 149 & 381 & Sapphire \\ \hline
+"Complex Fire" & 863 & 300 & 155 & 408 & Sapphire \\ \hline
+"Addict4269" & 849 & 451 & 148 & 250 & Sapphire \\ \hline
+"Feyral" & 805 & 336 & 129 & 340 & Sapphire \\ \hline
+"Zerotonine" & 760 & 535 & 129 & 96 & Sapphire \\ \hline
+"Rorkum" & 746 & 372 & 164 & 210 & Sapphire \\ \hline
+"Maylody" & 712 & 469 & 31 & 212 & Sapphire \\ \hline
+"CosmicStairs" & 681 & 287 & 308 & 86 & Sapphire \\ \hline
+"7800X3D" & 613 & 413 & 53 & 147 & Sapphire \\ \hline
+"Optimel" & 611 & 226 & 147 & 238 & Sapphire \\ \hline
+"IronJethide" & 606 & 225 & 127 & 254 & Sapphire \\ \hline
+"ThrillxAgony" & 557 & 277 & 131 & 149 & Sapphire \\ \hline
+"Windows Grp" & 555 & 294 & 83 & 178 & Sapphire \\ \hline
+"nEtKeEpEr" & 527 & 151 & 28 & 348 & Sapphire \\ \hline
+"Kheldwin" & 505 & 207 & 151 & 147 & Sapphire \\ \hline
 "SmokeDatZaZa" & 481 & 240 & 106 & 135 & RedTopaz \\ \hline
 "GIM Hasson" & 469 & 154 & 93 & 222 & RedTopaz \\ \hline
+"Kebab Flow" & 460 & 193 & 114 & 153 & RedTopaz \\ \hline
 "Disabled FE" & 457 & 233 & 79 & 145 & RedTopaz \\ \hline
-"Kebab Flow" & 452 & 185 & 114 & 153 & RedTopaz \\ \hline
-"MrSlingshot" & 448 & 156 & 125 & 167 & RedTopaz \\ \hline
+"MrSlingshot" & 453 & 161 & 125 & 167 & RedTopaz \\ \hline
 "ghosttoy2" & 415 & 239 & 142 & 34 & RedTopaz \\ \hline
-"Jaegerjaqs" & 374 & 171 & 49 & 154 & RedTopaz \\ \hline
-"GIM Lantti" & 355 & 103 & 123 & 129 & RedTopaz \\ \hline
-"GIM Tintti" & 344 & 122 & 125 & 97 & RedTopaz \\ \hline
+"Jaegerjaqs" & 377 & 172 & 49 & 156 & RedTopaz \\ \hline
+"GIM Lantti" & 359 & 103 & 123 & 133 & RedTopaz \\ \hline
+"GIM Tintti" & 346 & 124 & 125 & 97 & RedTopaz \\ \hline
 "Junne" & 334 & 148 & 125 & 61 & RedTopaz \\ \hline
 "Steely Lamb" & 210 & 165 & 45 & 0 & RedTopaz \\ \hline
 "Harglet" & 208 & 142 & 15 & 51 & RedTopaz \\ \hline
