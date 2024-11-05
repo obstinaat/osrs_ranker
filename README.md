@@ -1,4 +1,4 @@
-﻿# osrsranker
+# osrs_ranker
 
 TODO: Write a README
-# osrs_ranker
+
