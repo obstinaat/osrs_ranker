@@ -263,7 +263,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
                     Ok(mut level) => {
                         level = if level < 0 {0} else {level};
                         let mut score = 0;
-                        if (hiscore_category.name=="skills".to_string()){
+                        if (hiscore_category.name=="Skilling".to_string()){
                             score = parts.next().unwrap_or("").parse::<isize>().unwrap();
                             score = if score < 0 {0} else {score};
                         } else {
