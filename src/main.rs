@@ -1,3 +1,5 @@
+mod htmlwriter;
+
 use reqwest::{self, Body};
 use reqwest::Error;
 use tokio;
@@ -354,7 +356,7 @@ fn process_results(results: &mut Vec<player_points_rank_tuple>){
     create_latex_output(results);
     check_for_promotions(results); //check for promos first, as the store will make a new text file.
     store_daily_ranks(results);
-
+    generate_index_page(results);
 }
 
 fn create_latex_output(results: &mut Vec<player_points_rank_tuple>){
@@ -418,6 +420,28 @@ fn create_previous_results_map(content: String) -> HashMap<String, Rank> {
 
 
     map
+}
+
+fn generate_index_page(results: &mut Vec<player_points_rank_tuple>){
+    htmlwriter::write_file(process_results_into_frontend_data(results)).unwrap();
+}
+
+fn process_results_into_frontend_data(results: &mut Vec<player_points_rank_tuple>) -> Vec<(String, u32, u32, u32, u32, String)>{
+    results
+        .iter()
+        .map(|result|
+        {
+            (
+                trimmed_username(&result.username).to_string(), // Username
+                result.total_points as u32,                    // Total points
+                result.skilling_points as u32,                 // Skilling points
+                result.activities_points as u32,               // Activities points
+                result.pvm_points as u32,                      // PvM points
+                format!("{:?}", result.rank),                  // Rank (formatted as string)
+            )
+        }
+    )
+    .collect()
 }
 
 #[tokio::main]

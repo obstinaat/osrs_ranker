@@ -17,8 +17,8 @@
 "Addict4269", Dragonstone
 "7800X3D", Diamond
 "m0nkf1sh", Diamond
-"gorlai", Diamond
 "IM RuneHoon", Diamond
+"gorlai", Diamond
 "Mr Fortune", Diamond
 "TheWr0ngname", Diamond
 "Dizzy Pog", Ruby
