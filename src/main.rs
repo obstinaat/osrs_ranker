@@ -363,7 +363,7 @@ fn create_latex_output(results: &mut Vec<player_points_rank_tuple>){
 
     write_header(&mut file);
     for result in results {
-        writeln!(&file, "{:?} & {:?} & {:?} & {:?} & {:?} & {:?} \\\\ \\hline", result.username, result.total_points, result.skilling_points, result.activities_points, result.pvm_points, result.rank);
+        writeln!(&file, "{:?} & {:?} & {:?} & {:?} & {:?} & {:?} \\\\ \\hline", trimmed_username(&result.username), result.total_points, result.skilling_points, result.activities_points, result.pvm_points, result.rank);
     }
     write_footer(&mut file);
     file.flush().unwrap()
