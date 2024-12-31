@@ -17,6 +17,14 @@ h3 {
     margin-bottom: 10px;
     font-size: 1.5em;
 }
+.phoenix-logo {
+    position: fixed;
+    top: 10px; /* Adjust position from the top */
+    right: 10px; /* Adjust position from the right */
+    width: 250px; /* Adjust size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
 table {
     width: 60%; /* Reduce table width */
     margin: 0 auto; /* Ensure table is centered horizontally */

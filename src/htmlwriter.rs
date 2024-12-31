@@ -22,6 +22,8 @@ pub fn write_index(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::
         </script>
 </head>
 <body>
+    <img src="images/phoenix_logo.png" alt="Phoenix Logo" class="phoenix-logo">
+
     <h1>FE Nixes Clan - Player Stats</h1>
     <table>
         <thead>
@@ -79,6 +81,7 @@ pub fn generate_hiscores_details_page(username: &str, hiscores: &EvaluatedHiscor
         <link rel="stylesheet" href="../../style.css">
         </head>
         <body>
+        <img src="../../images/phoenix_logo.png" alt="Phoenix Logo" class="phoenix-logo">
         <h1>Details for {}</h1>
         <h2>Total Points: {}</h2>
     "#,
