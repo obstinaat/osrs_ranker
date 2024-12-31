@@ -45,20 +45,20 @@ struct Entry{
 struct Milestone(isize,isize);
 
 #[derive(Debug, Deserialize)]
-struct EvaluatedHiscores {
+pub struct EvaluatedHiscores {
     categories: Vec<EvaluatedCategory>,
     points: isize,
 }
 
 #[derive(Debug, Deserialize)]
-struct EvaluatedCategory {
+pub struct EvaluatedCategory {
     name: String,
     evaluated_entries: Vec<EvaluatedEntry>,
     points: isize,
 }
 
 #[derive(Debug, Deserialize)]
-struct EvaluatedEntry{
+pub struct EvaluatedEntry{
     name: String,
     score: isize,
     points: isize,
@@ -282,10 +282,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
             player_points.categories.push(evaluated_category);
         }
 
-        // For printing full data for 1 user
-        // if username.contains("BigBobOakley") {
-        //     println!("{:?}", player_points);
-        // }
+        htmlwriter::save_hiscores_details_page(trimmed_username(&username), &player_points);
 
         let total_points = player_points.points;
         let pvm_points  = player_points.categories.pop().unwrap().points;
@@ -423,7 +420,7 @@ fn create_previous_results_map(content: String) -> HashMap<String, Rank> {
 }
 
 fn generate_index_page(results: &mut Vec<player_points_rank_tuple>){
-    htmlwriter::write_file(process_results_into_frontend_data(results)).unwrap();
+    htmlwriter::write_index(process_results_into_frontend_data(results)).unwrap();
 }
 
 fn process_results_into_frontend_data(results: &mut Vec<player_points_rank_tuple>) -> Vec<(String, u32, u32, u32, u32, String)>{
