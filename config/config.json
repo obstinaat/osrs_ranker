@@ -1,10 +1,10 @@
-[{"name": "skills",
+[{"name": "Skilling",
 	"entries": [
-		{"name": "total",
+		{"name": "Total",
 			"milestones":[
 			[0, 0]
 		]},
-		{"name": "attack",
+		{"name": "Attack",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -25,7 +25,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "defence",
+		{"name": "Defence",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -46,7 +46,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "strength",
+		{"name": "Strength",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -67,7 +67,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "hitpoints",
+		{"name": "Hitpoints",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -88,7 +88,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "ranged",
+		{"name": "Ranged",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -109,7 +109,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "prayer",
+		{"name": "Prayer",
 			"milestones":[
 			[101333, 5],
 			[273742, 5],
@@ -130,7 +130,7 @@
 			[175000000, 50],
 			[200000000, 250]
 		]},
-		{"name": "magic",
+		{"name": "Magic",
 			"milestones":[
 			[101333, 2],
 			[273742, 2],
@@ -151,7 +151,7 @@
 			[175000000, 20],
 			[200000000, 100]
 		]},
-		{"name": "cooking",
+		{"name": "Cooking",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -172,7 +172,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "woodcutting",
+		{"name": "Woodcutting",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -193,7 +193,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "fletching",
+		{"name": "Fletching",
 			"milestones":[
 			[101333, 2],
 			[273742, 2],
@@ -214,7 +214,7 @@
 			[175000000, 20],
 			[200000000, 100]
 		]},
-		{"name": "fishing",
+		{"name": "Fishing",
 			"milestones":[
 			[101333, 4],
 			[273742, 4],
@@ -235,7 +235,7 @@
 			[175000000, 40],
 			[200000000, 200]
 		]},
-		{"name": "firemaking",
+		{"name": "Firemaking",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -256,7 +256,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "crafting",
+		{"name": "Crafting",
 			"milestones":[
 			[101333, 4],
 			[273742, 4],
@@ -277,7 +277,7 @@
 			[175000000, 40],
 			[200000000, 200]
 		]},
-		{"name": "smithing",
+		{"name": "Smithing",
 			"milestones":[
 			[101333, 2],
 			[273742, 2],
@@ -298,7 +298,7 @@
 			[175000000, 20],
 			[200000000, 100]
 		]},
-		{"name": "mining",
+		{"name": "Mining",
 			"milestones":[
 			[101333, 4],
 			[273742, 4],
@@ -319,7 +319,7 @@
 			[175000000, 40],
 			[200000000, 200]
 		]},
-		{"name": "herblore",
+		{"name": "Herblore",
 			"milestones":[
 			[101333, 8],
 			[273742, 8],
@@ -340,7 +340,7 @@
 			[175000000, 80],
 			[200000000, 400]
 		]},
-		{"name": "agility",
+		{"name": "Agility",
 			"milestones":[
 			[101333, 4],
 			[273742, 4],
@@ -361,7 +361,7 @@
 			[175000000, 40],
 			[200000000, 200]
 		]},
-		{"name": "thieving",
+		{"name": "Thieving",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -382,7 +382,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "slayer",
+		{"name": "Slayer",
 			"milestones":[
 			[101333, 5],
 			[273742, 5],
@@ -403,7 +403,7 @@
 			[175000000, 50],
 			[200000000, 250]
 		]},
-		{"name": "farming",
+		{"name": "Farming",
 			"milestones":[
 			[101333, 2],
 			[273742, 2],
@@ -424,7 +424,7 @@
 			[175000000, 20],
 			[200000000, 100]
 		]},
-		{"name": "runecrafting",
+		{"name": "Runecrafting",
 			"milestones":[
 			[101333, 5],
 			[273742, 5],
@@ -445,7 +445,7 @@
 			[175000000, 50],
 			[200000000, 250]
 		]},
-		{"name": "hunter",
+		{"name": "Hunter",
 			"milestones":[
 			[101333, 1],
 			[273742, 1],
@@ -466,7 +466,7 @@
 			[175000000, 10],
 			[200000000, 50]
 		]},
-		{"name": "construction",
+		{"name": "Construction",
 			"milestones": [
 			[101333, 4],
 			[273742, 4],
@@ -488,89 +488,89 @@
 			[200000000, 200]
 		]}
 	]},
- {"name":"clues_and_minigames",
+ {"name":"Clues and Minigames",
 			"entries": [
-			{"name":"league_points", 
+			{"name":"League points",
 			"milestones": [
 		        [0, 0]
 		    ]},
-			{"name": "deadman_points", 
+			{"name": "Deadman points",
 			"milestones":[
 		        [0, 0]
 		    ]},
-			{"name": "bounty_hunter_hunter", 
+			{"name": "Bounty_hunter_hunter",
 			"milestones":[
 		        [0, 0],
 		        [1, 1]
 		    ]},
-			{"name": "bounty_hunter_rogue", 
-			"milestones":[
-		        [0, 0],
-		        [1, 1]
-
-		    ]},
-			{"name": "bounty_hunter_legacy_hunter", 
+			{"name": "Bounty_hunter_rogue",
 			"milestones":[
 		        [0, 0],
 		        [1, 1]
 
 		    ]},
-			{"name": "bounty_hunter_legacy_rogue", 
+			{"name": "Bounty_hunter_legacy_hunter",
 			"milestones":[
 		        [0, 0],
 		        [1, 1]
 
 		    ]},
-			{"name": "clue_scrolls_all", 
+			{"name": "Bounty_hunter_legacy_rogue",
+			"milestones":[
+		        [0, 0],
+		        [1, 1]
+
+		    ]},
+			{"name": "Clue Scrolls (All)",
 			"milestones":[
 		        [100, 5],
 		        [200, 5],
 		        [500, 10],
 		        [1000, 15]
 		    ]},
-			{"name": "clue_scrolls_beginner", 
+			{"name": "Clue scrolls (beginner)",
 			"milestones":[
 		        [-1, 52]
 		    ]},
-			{"name": "clue_scrolls_easy", 
+			{"name": "Clue scrolls (easy)",
 			"milestones":[
 		        [-1, 28]
 		    ]},
-			{"name": "clue_scrolls_medium", 
+			{"name": "Clue scrolls (medium)",
 			"milestones":[
 		        [-1, 15]
 		    ]},
-			{"name": "clue_scrolls_hard", 
+			{"name": "Clue scrolls (hard)",
 			"milestones":[
 		        [-1, 11]
 		    ]},
-			{"name": "clue_scrolls_elite", 
+			{"name": "Clue scrolls (elite)",
 			"milestones":[
 		        [-1, 8]
 		    ]},
-			{"name": "clue_scrolls_master", 
+			{"name": "Clue scrolls (master)",
 			"milestones":[
 		        [-1, 5]
 		    ]},
-			{"name": "lms_ranked", 
+			{"name": "LMS Competitive",
 			"milestones":[
 		        [0, 0]
 		    ]},
-			{"name": "pvp_arena", 
+			{"name": "PVP Arena",
 			"milestones":[
 		        [0, 0],
 		        [1, 1]
 		    ]},
-			{"name": "soul_wars_zeal", 
+			{"name": "Soul Wars Zeal",
 			"milestones":[
 		        [0, 0],
 		        [1, 1]
 		    ]},
-			{"name": "gotr_rifts", 
+			{"name": "Guardians of the Rift (Rifts closed)",
 			"milestones":[
 		        [-1, 15]
 		    ]},
-		    {"name": "colosseum_glory",
+		    {"name": "Colosseum Glory",
 		    "milestones":[
 		    	[0, 0],
 		    	[5000, 5],
@@ -579,17 +579,17 @@
 		    	[20000, 5]
 		    ]}
 	    ]},
- {"name": "bossing", 
+ {"name": "PVM",
  "entries": [
-			{"name": "abyssal_sire", 
+			{"name": "Abyssal Sire",
 				"milestones": [
         [-1, 22]
 		]},
-		{"name": "alchemical_hydra", 
+		{"name": "Alchemical hydra",
 				"milestones": [
 	        [-1, 15]
 		]},
-		{"name": "amoxliatl", 
+		{"name": "Amoxliatl",
 				"milestones": [
         [-1, 22]
 
@@ -602,172 +602,172 @@
 				"milestones": [
 	        [-1, 30]
 		]},
-		{"name": "barrows", 
+		{"name": "Barrows",
 				"milestones": [
 	        [-1, 11]
 		]},
-		{"name": "bryophyta", 
+		{"name": "Bryophyta",
 				"milestones": [
 	        [-1, 4]
 		]},
-		{"name": "callisto", 
+		{"name": "Callisto",
 				"milestones": [
 	        [-1, 42]
 		]},
-		{"name": "calvarion", 
+		{"name": "Calvarion",
 				"milestones": [
 	        [-1, 27]
 		]},
-		{"name": "cerberus", 
+		{"name": "Cerberus",
 				"milestones": [
 		    [-1, 32]
 		]},
-		{"name": "cox", 
+		{"name": "Chambers of Xeric",
 				"milestones": [
 		    [-1, 5]
 		]},
-		{"name": "cox_cm", 
+		{"name": "COX Challenge Mode",
 				"milestones": [
 		    [-1, 2]
 		]},
-		{"name": "chaos_elemental", 
+		{"name": "Chaos Elemental",
 				"milestones": [
 		    [-1, 60]
 		]},
-		{"name": "chaos_fanatic", 
+		{"name": "Chaos Fanatic",
 				"milestones": [
 		    [-1, 50]
 		]},
-		{"name": "commander_zilyana", 
+		{"name": "Commander Zilyana",
 				"milestones": [
 		    [-1, 58]
 		]},
-		{"name": "corporeal_beast", 
+		{"name": "Corporeal Beast",
 				"milestones": [
 		    [-1, 3]
 		]},
-		{"name": "crazy_archeologist", 
+		{"name": "Crazy Archeologist",
 				"milestones":[
 		    [-1, 37]
 		]},
-		{"name": "dagannoth_prime", 
+		{"name": "Dagannoth Prime",
 				"milestones": [
 		    [-1, 52]
 		]},
-		{"name": "dagannoth_rex", 
+		{"name": "Dagannoth Rex",
 				"milestones": [
 		    [-1, 52]
 		]},
-		{"name": "dagannoth_supreme", 
+		{"name": "Dagannoth Supreme",
 				"milestones": [
 		    [-1, 52]
 		]},
-		{"name": "deranged_archaeologist", 
+		{"name": "Deranged Archeologist",
 				"milestones": [
 		    [-1, 40]
 		]},
-		{"name": "duke_sucellus", 
+		{"name": "Duke Succellus",
 				"milestones": [
 		    [-1, 15]
 		]},
-		{"name": "general_graardor", 
+		{"name": "General Graardoor",
 				"milestones": [
 		    [-1, 29]
 		]},
-		{"name": "giant_mole", 
+		{"name": "Giant Mole",
 				"milestones": [
 		    [-1, 62]
 		]},
-		{"name": "grotesque_guardians", 
+		{"name": "Grotesque Guardians",
 				"milestones": [
 		    [-1, 17]
 		]},
-		{"name": "hespori", 
+		{"name": "Hespori",
 				"milestones": [
 		    [-1, 1]
 		]},
-		{"name": "kalphite_queen", 
+		{"name": "Kalphite Queen",
 				"milestones": [
 		    [-1, 27]
 		]},
-		{"name": "king_black_dragon", 
+		{"name": "King Black Dragon",
 				"milestones": [
 		    [-1, 65]
 		]},
-		{"name": "kraken", 
+		{"name": "Kraken",
 				"milestones": [
 		    [-1, 100]
 		]},
-		{"name": "kreearra", 
+		{"name": "Kreearra",
 				"milestones": [
 		    [-1, 20]
 		]},
-		{"name": "kril_tsutsaroth", 
+		{"name": "Kril Tsutsaroth",
 				"milestones": [
 			[-1, 32]
 		]},
-		{"name": "lunar_chests", 
+		{"name": "Lunar Chests",
 				"milestones": [
 			[-1, 9]
 		]},
-		{"name": "mimic", 
+		{"name": "Mimic",
 				"milestones": [
 		    [-1, 1]
 		]},
-		{"name": "nex", 
+		{"name": "Nex",
 				"milestones": [
 		    [-1, 12]
 		]},
-		{"name": "nightmare", 
+		{"name": "Nightmare",
 				"milestones": [
 		    [-1, 7]
 		]},
-		{"name": "phosani_nightmare", 
+		{"name": "Phosani's Nightmare",
 				"milestones": [
 		    [-1, 3]
 		]},
-		{"name": "obor", 
+		{"name": "Obor",
 				"milestones": [
 	        [-1, 6]
 		]},
-		{"name": "phantom_muspah", 
+		{"name": "Phantom Muspah",
 				"milestones": [
 			[-1, 13]
 		]},
-		{"name": "sarachnis", 
+		{"name": "Sarachnis",
 				"milestones": [
 		    [-1, 40]
 		]},
-		{"name": "scorpia", 
+		{"name": "Scorpia",
 				"milestones": [
 		    [-1, 65]
 		]},
-		{"name": "scurrius", 
+		{"name": "Scurrius",
 				"milestones": [
 			[-1, 42]
 		]},
-		{"name": "skotizo", 
+		{"name": "Skotizo",
 				"milestones": [
 		    [-1, 1]
 		]},
-			{"name": "sol_heredit", 
+			{"name": "Sol Heredit",
 				"milestones": [
 		    [1, 35],
 		    [-1, 1]
 		]},
-		{"name": "spindel", 
+		{"name": "Spindel",
 				"milestones": [
 		    [-1,27]
 		]},
-		{"name": "tempoross", 
+		{"name": "Tempoross",
 				"milestones": [
 	        [-1, 15]
 		]},
-		{"name": "gauntlet", 
+		{"name": "Gauntlet",
 				"milestones": [
 		    [-1,5]
 		]},
-		{"name": "corrupted_gauntlet", 
+		{"name": "Corrupted Gauntlet",
 				"milestones": [
 		    [-1,3]
 		]},
@@ -775,69 +775,69 @@
 				"milestones": [
 		    [-1,3]
 		]},
-		{"name": "leviathan", 
+		{"name": "The Leviathan",
 				"milestones": [
 		    [-1,15]
 		]},
-		{"name": "whisperer", 
+		{"name": "The Whisperer",
 				"milestones": [
 		    [-1,10]
 		]},
-		{"name": "tob", 
+		{"name": "TOB",
 				"milestones": [
 		    [-1, 3]
 		]},
-		{"name": "tob_hard_mode", 
+		{"name": "TOB Hard Mode",
 				"milestones": [
 		    [-1, 2]
 		]},
-		{"name": "thermy", 
+		{"name": "Thermonuclear Smoke Devil",
 				"milestones": [
 	        [-1,75]
 		]},
-		{"name": "toa", 
+		{"name": "TOA",
 				"milestones": [
 		    [-1, 3]
 		]},
-		{"name": "toa_expert_mode", 
+		{"name": "TOA Expert Mode",
 				"milestones": [
 		    [-1, 2]
 		]},
-		{"name": "tzkal_zuk", 
+		{"name": "TzKal-Zuk",
 				"milestones": [
 		    [1, 50],
 		    [-2, 1]
 		]},
-		{"name": "tztok_jad", 
+		{"name": "TzTok-Jad",
 				"milestones": [
 		    [1, 20],
 		    [-1, 1]
 		]},
-		{"name": "vardorvis", 
+		{"name": "Vardorvis",
 				"milestones": [
 		    [-1,18]
 		]},
-		{"name": "venenatis", 
+		{"name": "Venenatis",
 				"milestones": [
 		    [-1,20]
 		]},
-		{"name": "vetion", 
+		{"name": "Vetion",
 				"milestones": [
 		    [-1, 25]
 		]},
-		{"name": "vorkath", 
+		{"name": "Vorkath",
 				"milestones": [
 		    [-1, 17]
 		]},
-		{"name": "wintertodt", 
+		{"name": "Wintertodt",
 				"milestones": [
 	        [-1, 20]
 		]},
-		{"name": "zalcano", 
+		{"name": "Zalcano",
 				"milestones": [
 	        [-1, 20]
 		]},
-		{"name": "zulrah", 
+		{"name": "Zulrah",
 				"milestones": [
 		    [-1, 22]
 		]}
