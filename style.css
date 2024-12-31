@@ -8,6 +8,15 @@ h1 {
     text-align: center;
     color: #d6336c;
 }
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
 table {
     width: 60%; /* Reduce table width */
     margin: 0 auto; /* Ensure table is centered horizontally */
