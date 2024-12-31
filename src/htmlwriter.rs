@@ -11,7 +11,7 @@ pub fn write_file(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::R
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE Nixes Clan Stats</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>FE Nixes Clan - Player Stats</h1>
@@ -19,11 +19,11 @@ pub fn write_file(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::R
         <thead>
             <tr>
                 <th>Player Name</th>
-                <th>Total Kills</th>
-                <th>Boss Kills</th>
-                <th>Deaths</th>
-                <th>Points Earned</th>
-                <th>Best Drop</th>
+                <th>Total Points</th>
+                <th>Points from Skilling</th>
+                <th>Points from Clues and Activities</th>
+                <th>Points from PVM</th>
+                <th>Fe Nixes Rank</th>
             </tr>
         </thead>
         <tbody>
