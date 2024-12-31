@@ -2,16 +2,19 @@ use reqwest::{self, Body};
 use reqwest::Error;
 use tokio;
 use std::fs::File;
-use std::io::Read;
+use std::io::{ErrorKind, Error as stdError, Read};
 use serde_json::{self, json};
 use serde::Deserialize;
-use std::{env, time};
-use std::cmp::Reverse;
+use std::{env, fs, time};
+use std::cmp::{PartialEq, Reverse};
+use std::collections::HashMap;
 use std::io::prelude::*;
 use std::thread;
 use tokio::task;
 use std::io::{self, BufRead};
-use std::path::Path;
+use std::path::{Path, PathBuf};
+use chrono::{Datelike, Local};
+
 
 const HISCORES_URL_BASE: &str = "https://secure.runescape.com/m=hiscore_oldschool/index_lite.ws?player=";
 const FILE_NAME: &str = "config/usernames.txt";
@@ -86,7 +89,7 @@ struct player_points_rank_tuple{
     rank: Rank
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, PartialEq)]
 enum Rank {
     Unranked,
     RedTopaz,
@@ -102,6 +105,29 @@ enum Rank {
     Soul,
     Wrath
 }
+
+impl Rank {
+    fn from_name(name: &str) -> Self {
+        match name {
+            "Unranked" => Rank::Unranked,
+            "RedTopaz" => Rank::RedTopaz,
+            "Sapphire" => Rank::Sapphire,
+            "Emerald" => Rank::Emerald,
+            "Ruby" => Rank::Ruby,
+            "Diamond" => Rank::Diamond,
+            "Dragonstone" => Rank::Dragonstone,
+            "Onyx" => Rank::Onyx,
+            "Zenyte" => Rank::Zenyte,
+            "Death" => Rank::Death,
+            "Blood" => Rank::Blood,
+            "Soul" => Rank::Soul,
+            "Wrath" => Rank::Wrath,
+            _ => Rank::Unranked, // Default to Unranked for unknown names
+        }
+    }
+}
+
+
 
 async fn get_hiscores(username: &str) -> Result<String, Error> {
     let hiscore_url = String::from(HISCORES_URL_BASE) + &username;
@@ -135,6 +161,33 @@ fn calc_points(score: isize, milestones: &Vec<Milestone>) -> isize {
     points
 }
 
+fn find_latest_ranks_file_path() -> Result<PathBuf, std::io::Error>{
+    let dir_path = "out/ranks"; // Replace with your directory path
+
+    let mut latest_file = None;
+    let mut latest_time = None;
+
+    for entry in fs::read_dir(dir_path).map_err(|_| ErrorKind::NotFound)? {
+        let entry = entry.map_err(|_| ErrorKind::NotFound)?;
+        let path = entry.path();
+
+        if path.is_file() {
+            if let Ok(metadata) = entry.metadata() {
+                if let Ok(modified_time) = metadata.modified() {
+                    if latest_time.is_none() || modified_time > latest_time.unwrap() {
+                        latest_time = Some(modified_time);
+                        latest_file = Some(path);
+                    }
+                }
+            }
+        }
+    }
+
+    match latest_file {
+        Some(path) => Ok(path),
+        None => Err(std::io::Error::from(ErrorKind::NotFound))
+    }
+}
 
 fn read_config() -> Result<HiScoreStructure, Box<dyn std::error::Error>> {
     let file_path = "config/config.json";
@@ -164,10 +217,15 @@ fn writefile(text: &str) -> std::io::Result<()> {
     Ok(())
 }
 
+fn trimmed_username(username: &str) -> &str {
+    &username.trim()[..username.len() - 1].trim_matches('"')
+}
+
 async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec<player_points_rank_tuple>, Error>{
+
     let mut results:Vec<player_points_rank_tuple> = Vec::new();
     for username in usernames{
-        let mut hiscoresstring = get_hiscores(&username).await?;
+        let mut hiscoresstring = get_hiscores(trimmed_username(&username)).await?;
             if hiscoresstring.starts_with("<!DOCTYPE html><html><head><title>404"){
                 println!("Hiscores not found for user: {:?}.", username);
                 return Ok(results)
@@ -222,9 +280,10 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
             player_points.categories.push(evaluated_category);
         }
 
-        if username.contains("Letharg") {
-            println!("{:?}", player_points);
-        }
+        // For printing full data for 1 user
+        // if username.contains("BigBobOakley") {
+        //     println!("{:?}", player_points);
+        // }
 
         let total_points = player_points.points;
         let pvm_points  = player_points.categories.pop().unwrap().points;
@@ -292,6 +351,13 @@ fn write_footer(file: &mut File){
 }
 
 fn process_results(results: &mut Vec<player_points_rank_tuple>){
+    create_latex_output(results);
+    check_for_promotions(results); //check for promos first, as the store will make a new text file.
+    store_daily_ranks(results);
+
+}
+
+fn create_latex_output(results: &mut Vec<player_points_rank_tuple>){
     let mut file = File::create(OUTPUT_FILE).unwrap();
     results.sort_by_key(|item| Reverse(item.total_points));
 
@@ -301,6 +367,57 @@ fn process_results(results: &mut Vec<player_points_rank_tuple>){
     }
     write_footer(&mut file);
     file.flush().unwrap()
+}
+
+fn store_daily_ranks(results: &mut Vec<player_points_rank_tuple>){
+    let today = Local::now().date_naive();
+    let year = today.year();
+    let month = today.month();
+    let day = today.day();
+
+    let filename = format!("out/ranks/{}-{}-{}-RANKS.txt", year, month, day);
+
+    let mut file = File::create(filename).unwrap();
+    for result in results {
+        writeln!(&file, "{:?}, {:?}", trimmed_username(&result.username), result.rank);
+    }
+    file.flush().unwrap()
+}
+
+fn check_for_promotions(results: &mut Vec<player_points_rank_tuple>){
+    let latest_file = find_latest_ranks_file_path();
+    match latest_file{
+        Ok(value) => compare_results(results, value),
+        Err(err) => println!("No previous results file found.")
+    }
+}
+
+fn compare_results(results: &mut Vec<player_points_rank_tuple>, filepath: PathBuf){
+    println!("Filepath selected: {:?}", filepath);
+    let content = fs::read_to_string(filepath).unwrap();
+    let previous_results = create_previous_results_map(content);
+
+    for result in results {
+        if let Some(previous_rank) = previous_results.get(trimmed_username(&result.username)){
+            if previous_rank != &result.rank {
+                println!("New rank found: {:?} {:?} --> {:?}", &result.username, previous_rank, &result.rank);
+            }
+        }
+
+    }
+}
+
+fn create_previous_results_map(content: String) -> HashMap<String, Rank> {
+    let mut map = HashMap::new();
+
+    for line in content.lines(){
+        if let Some((username, rank)) = line.split_once(',') {
+            map.insert(String::from(trimmed_username(username)), Rank::from_name(rank.trim()));
+        }
+    }
+
+
+    map
 }
 
 #[tokio::main]
