@@ -9,9 +9,10 @@ h1 {
     color: #d6336c;
 }
 table {
-    width: 50%;
+    width: 60%; /* Reduce table width */
+    margin: 0 auto; /* Ensure table is centered horizontally */
     border-collapse: collapse;
-    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
 }
 th, td {
     border: 1px solid #ddd;

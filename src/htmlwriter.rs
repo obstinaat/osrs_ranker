@@ -12,6 +12,12 @@ pub fn write_file(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::R
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE Nixes Clan Stats</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+            function goToDetailsPage(username) {
+                // Redirect to details.html with the username as a query parameter
+                window.location.href = 'details/' + username + '.html';
+            }
+        </script>
 </head>
 <body>
     <h1>FE Nixes Clan - Player Stats</h1>
@@ -33,7 +39,7 @@ pub fn write_file(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::R
     for (name, total_kills, boss_kills, deaths, points, best_drop) in data {
         html_content.push_str(&format!(
             r#"
-            <tr>
+            <tr onclick="goToDetailsPage('{}')">
                 <td>{}</td>
                 <td>{}</td>
                 <td>{}</td>
@@ -42,7 +48,7 @@ pub fn write_file(data: Vec<(String, u32, u32, u32, u32, String)>) -> std::io::R
                 <td>{}</td>
             </tr>
             "#,
-            name, total_kills, boss_kills, deaths, points, best_drop
+            name, name, total_kills, boss_kills, deaths, points, best_drop
         ));
     }
 
