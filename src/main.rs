@@ -219,17 +219,18 @@ fn writefile(text: &str) -> std::io::Result<()> {
     Ok(())
 }
 
-fn trimmed_username(username: &str) -> &str {
-    &username.trim()[..username.len() - 1].trim_matches('"')
+fn trimmed_username(username: &str) -> String {
+    username.replace(",", "").trim().trim_matches('"').to_string()
 }
 
 async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec<player_points_rank_tuple>, Error>{
 
     let mut results:Vec<player_points_rank_tuple> = Vec::new();
     for username in usernames{
-        let mut hiscoresstring = get_hiscores(trimmed_username(&username)).await?;
+        let trimmed_username = &trimmed_username(&username);
+        let mut hiscoresstring = get_hiscores(trimmed_username).await?;
             if hiscoresstring.starts_with("<!DOCTYPE html><html><head><title>404"){
-                println!("Hiscores not found for user: {:?}.", username);
+                println!("Hiscores not found for user: {:?}.", trimmed_username);
                 return Ok(results)
             }
             while hiscoresstring.starts_with('<') {
@@ -282,7 +283,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
             player_points.categories.push(evaluated_category);
         }
 
-        htmlwriter::save_hiscores_details_page(trimmed_username(&username), &player_points);
+        htmlwriter::save_hiscores_details_page(trimmed_username, &player_points);
 
         let total_points = player_points.points;
         let pvm_points  = player_points.categories.pop().unwrap().points;
@@ -300,6 +301,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
                 skilling_points: skilling_points,
                 rank: evaluate_rank(points),
             };
+
             results.push(tuple);
         }
     }
@@ -397,7 +399,7 @@ fn compare_results(results: &mut Vec<player_points_rank_tuple>, filepath: PathBu
     let previous_results = create_previous_results_map(content);
 
     for result in results {
-        if let Some(previous_rank) = previous_results.get(trimmed_username(&result.username)){
+        if let Some(previous_rank) = previous_results.get(&trimmed_username(&result.username)){
             if previous_rank != &result.rank {
                 println!("New rank found: {:?} {:?} --> {:?}", &result.username, previous_rank, &result.rank);
             }
