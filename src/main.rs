@@ -301,7 +301,6 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
                 skilling_points: skilling_points,
                 rank: evaluate_rank(points),
             };
-
             results.push(tuple);
         }
     }

@@ -578,11 +578,15 @@
 		    	[15000, 5],
 		    	[20000, 5]
 		    ]},
-			{"name": "Collections logged",
-			"milestones":[
-				[0, 0]
+			{"name": "Collections Logged",
+				"milestones":[
+					[0, 0],
+					[5000, 5],
+					[10000, 5],
+					[15000, 5],
+					[20000, 5]
 			]}
-			]},
+	    ]},
  {"name": "PVM",
  "entries": [
 			{"name": "Abyssal Sire",
