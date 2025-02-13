@@ -1,40 +1,62 @@
+"Reporting U", Soul
 "LivEviL K", Blood
 "Letharg", Death
 "Squampton", Death
 "grn bussin", Death
 "LimeFIT", Onyx
 "FerrumElite", Onyx
+"Ramir", Onyx
+"xPandi", Onyx
+"Addict4269", Onyx
 "erknn", Onyx
 "BigBobOakley", Onyx
 "BlazedMilk", Onyx
 "Catalystt", Dragonstone
+"5tuns", Dragonstone
+"Marsh Kebab", Dragonstone
 "DottyBirdGIM", Dragonstone
+"WsInTheShat", Dragonstone
 "IM RuneHoon", Dragonstone
+"7800X3D", Diamond
 "Tauhdrik", Diamond
+"Avoids Sun", Diamond
 "gorlai", Diamond
 "m0nkf1sh", Diamond
 "TheWr0ngname", Diamond
 "Dizzy Pog", Diamond
+"Mr Fortune", Diamond
+"g humbie", Diamond
 "0liwn", Ruby
+"GIM Mawija", Ruby
 "Fe mowenthu", Ruby
+"Foxys", Ruby
 "Kyaandere", Ruby
 "ironpmb", Ruby
+"Rorkum", Ruby
 "IronJethide", Emerald
+"Zerotonine", Emerald
 "IronTilx", Emerald
 "CosmicStairs", Emerald
 "Disabled FE", Emerald
+"GIM Hasson", Emerald
 "Iron Revoka", Emerald
 "TooKlean", Emerald
 "Kebab Flow", Sapphire
 "Windows Grp", Sapphire
 "Junne", Sapphire
+"Battle Boost", Sapphire
 "Feyral", Sapphire
+"ghosttoy2", Sapphire
 "Jaegerjaqs", Sapphire
+"Optimel", Sapphire
+"nEtKeEpEr", Sapphire
 "SmokeDatZaZa", Sapphire
 "GIM Tintti", Sapphire
 "Complex Air", Sapphire
-"MrSlingshot", Sapphire
 "Steely Lamb", Sapphire
+"MrSlingshot", Sapphire
+"Kheldwin", Sapphire
+"GIM Lantti", Sapphire
 "Harglet", Sapphire
 "1Hbandit", RedTopaz
 "DI8S", RedTopaz
@@ -43,3 +65,4 @@
 "SkippyKitty", RedTopaz
 "FoxyFrogHog", RedTopaz
 "IronNemoko", RedTopaz
+"MlLFuker", RedTopaz
