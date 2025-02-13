@@ -224,14 +224,14 @@ fn trimmed_username(username: &str) -> String {
 }
 
 async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec<player_points_rank_tuple>, Error>{
-
     let mut results:Vec<player_points_rank_tuple> = Vec::new();
     for username in usernames{
+
         let trimmed_username = &trimmed_username(&username);
         let mut hiscoresstring = get_hiscores(trimmed_username).await?;
             if hiscoresstring.starts_with("<!DOCTYPE html><html><head><title>404"){
                 println!("Hiscores not found for user: {:?}.", trimmed_username);
-                return Ok(results)
+                break
             }
             while hiscoresstring.starts_with('<') {
                 thread::sleep(time::Duration::from_secs(1));
@@ -240,8 +240,6 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
                     return Ok(results)
                 }
             }
-
-
         let mut hiscoreslines = hiscoresstring.lines();
 
         let mut player_points = EvaluatedHiscores{categories: Vec::new(), points: 0};
@@ -292,7 +290,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
         
         if total_points > 1 {
             //print_scores(&username, total_points, activities_points, skilling_points, pvm_points).await;
-            println!("{:?}", &trimmed_username);
+            //println!("{:?}", &trimmed_username);
             let points = &player_points.points.clone();
             let tuple = player_points_rank_tuple {
                 username: String::from(trimmed_username),
