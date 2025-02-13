@@ -292,9 +292,10 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
         
         if total_points > 1 {
             //print_scores(&username, total_points, activities_points, skilling_points, pvm_points).await;
+            println!("{:?}", &trimmed_username);
             let points = &player_points.points.clone();
             let tuple = player_points_rank_tuple {
-                username: String::from(username),
+                username: String::from(trimmed_username),
                 total_points: total_points,
                 pvm_points: pvm_points,
                 activities_points: activities_points,
