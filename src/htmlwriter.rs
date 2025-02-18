@@ -132,6 +132,7 @@ pub fn generate_hiscores_details_page(username: &str, hiscores: &EvaluatedHiscor
 }
 
 pub fn save_hiscores_details_page(username: &str, hiscores: &EvaluatedHiscores) -> std::io::Result<()> {
+    println!("{:?}", username);
     let html = generate_hiscores_details_page(username, hiscores);
     let filename = format!("out/details/{}.html", username);
     let mut file = File::create(filename)?;
