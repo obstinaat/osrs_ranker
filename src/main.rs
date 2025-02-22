@@ -475,6 +475,7 @@ async fn main() -> Result<(), Error> {
     }
 
     process_results(&mut results);
+    println!("Processed {:?} users.", results.len());
     
     Ok(())
 } 
