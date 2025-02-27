@@ -1,9 +1,7 @@
-"Metalrule280", Soul
 "LivEviL K", Blood
 "Letharg", Death
 "Squampton", Death
 "grn bussin", Death
-"Ramir", Onyx
 "LimeFIT", Onyx
 "xPandi", Onyx
 "FerrumElite", Onyx
@@ -30,9 +28,6 @@
 "Fe mowenthu", Ruby
 "Foxys", Ruby
 "Kyaandere", Ruby
-"IronJethide", Ruby
-"ironpmb", Ruby
-"Rorkum", Ruby
 "Battle Boost", Emerald
 "IronTilx", Emerald
 "Disabled FE", Emerald
@@ -47,9 +42,7 @@
 "ghosttoy2", Sapphire
 "Feyral", Sapphire
 "Jaegerjaqs", Sapphire
-"Optimel", Sapphire
 "nEtKeEpEr", Sapphire
-"SmokeDatZaZa", Sapphire
 "Steely Lamb", Sapphire
 "GIM Tintti", Sapphire
 "Harglet", Sapphire
@@ -62,6 +55,4 @@
 "Smol Loan", RedTopaz
 "BobUnlimited", RedTopaz
 "MlLFuker", RedTopaz
-"SkippyKitty", RedTopaz
-"IronNemoko", RedTopaz
 "FoxyFrogHog", RedTopaz
