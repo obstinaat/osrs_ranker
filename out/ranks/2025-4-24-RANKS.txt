@@ -8,6 +8,7 @@
 "LimeFIT", Onyx
 "erknn", Onyx
 "BigBobOakley", Onyx
+"Catalystt", Onyx
 "BlazedMilk", Onyx
 "5tuns", Dragonstone
 "Tauhdrik", Dragonstone
