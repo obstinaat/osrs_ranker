@@ -16,6 +16,7 @@
 "5tuns", Dragonstone
 "DottyBirdGIM", Dragonstone
 "Marsh Kebab", Dragonstone
+"WiizBoom", Dragonstone
 "IM RuneHoon", Dragonstone
 "WsInTheShat", Dragonstone
 "Fresh Panty", Dragonstone

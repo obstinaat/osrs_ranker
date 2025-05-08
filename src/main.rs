@@ -449,7 +449,7 @@ async fn main() -> Result<(), Error> {
 
     let usernames = read_usernames_file().unwrap();
 
-    let num_pieces = 10; //Number of threads.
+    let num_pieces = 5; //Number of threads.
     let mut pieces = Vec::new();
     let piece_size = (usernames.len() + num_pieces - 1) / num_pieces;
 
