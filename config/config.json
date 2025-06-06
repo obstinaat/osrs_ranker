@@ -845,6 +845,10 @@
 				"milestones": [
 	        [-1, 20]
 		]},
+	 	{"name": "Yama",
+				"milestones": [
+					[-1, 8]
+				]},
 		{"name": "Zalcano",
 				"milestones": [
 	        [-1, 20]
