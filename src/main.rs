@@ -234,7 +234,7 @@ async fn process(config: HiScoreStructure, usernames: Vec<String>) -> Result<Vec
                 break
             }
             while hiscoresstring.starts_with('<') {
-                thread::sleep(time::Duration::from_secs(1));
+                tokio::time::sleep(time::Duration::from_secs(1)).await;
                 hiscoresstring = get_hiscores(&username).await?;
                 if hiscoresstring.starts_with("<!DOCTYPE html><html><head><title>404") {
                     return Ok(results)
