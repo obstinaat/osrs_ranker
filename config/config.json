@@ -674,11 +674,15 @@
 				"milestones": [
 		    [-1, 40]
 		]},
+		 {"name": "Doom of Mokhaiotl",
+		 "milestones": [
+			 [-1, 40]
+		 ]},
 		{"name": "Duke Succellus",
 				"milestones": [
 		    [-1, 15]
 		]},
-		{"name": "General Graardoor",
+		{"name": "General Graardor",
 				"milestones": [
 		    [-1, 15]
 		]},
