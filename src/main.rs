@@ -83,12 +83,12 @@ struct Player{
 
 #[derive(Debug, Deserialize)]
 struct player_points_rank_tuple{
-    username: String,
-    total_points: isize,
-    pvm_points: isize,
-    skilling_points: isize,
-    activities_points: isize,
-    rank: Rank
+    pub username: String,
+    pub total_points: isize,
+    pub pvm_points: isize,
+    pub skilling_points: isize,
+    pub activities_points: isize,
+    pub rank: Rank
 }
 
 #[derive(Debug, Deserialize, PartialEq)]
