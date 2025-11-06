@@ -521,6 +521,12 @@
 		        [1, 1]
 
 		    ]},
+			{"name": "Unknown, will be fixed later",
+				"milestones":[
+					[0, 0],
+					[1, 1]
+
+				]},
 			{"name": "Clue Scrolls (All)",
 			"milestones":[
 		        [100, 5],
@@ -758,6 +764,11 @@
 				"milestones": [
 			[-1, 42]
 		]},
+	    {"name": "Unknown, will be fixed later",
+		 "milestones": [
+			 [0, 0],
+			 [1, 1]
+		 ]},
 		{"name": "Skotizo",
 				"milestones": [
 		    [-1, 1]
