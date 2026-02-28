@@ -641,6 +641,10 @@
 				"milestones": [
 	        [-1, 11]
 		]},
+	    {"name": "Brutus",
+		 "milestones": [
+			 [-1, 40]
+		 ]},
 		{"name": "Bryophyta",
 				"milestones": [
 	        [-1, 4]
@@ -723,7 +727,7 @@
 		]},
 		{"name": "Hespori",
 				"milestones": [
-		    [-1, 1]
+		    [-1, 2]
 		]},
 		{"name": "Kalphite Queen",
 				"milestones": [
