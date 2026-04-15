@@ -449,7 +449,7 @@ async fn main() -> Result<(), Error> {
 
     let usernames = read_usernames_file().unwrap();
 
-    let num_pieces = 5; //Number of threads.
+    let num_pieces = 1; //Number of threads.
     let mut pieces = Vec::new();
     let piece_size = (usernames.len() + num_pieces - 1) / num_pieces;
 
@@ -471,8 +471,10 @@ async fn main() -> Result<(), Error> {
     for handle in handles {
         // Wait for the thread to finish and get its result
         let result = handle.await.unwrap().unwrap();
+        println!("done processing result {}",result.len());
         results.extend(result);
     }
+    println!("done");
 
     process_results(&mut results);
     println!("Processed {:?} users.", results.len());
