@@ -747,12 +747,16 @@
 		]},
 		{"name": "Kril Tsutsaroth",
 				"milestones": [
-			[-1, 32]
+			[-1, 17]
 		]},
 		{"name": "Lunar Chests",
 				"milestones": [
-			[-1, 9]
+			[-1, 7]
 		]},
+		{"name": "Mad Angel",
+		 "milestones": [
+			 [-1, 5]
+		 ]},
 		{"name": "Mimic",
 				"milestones": [
 		    [-1, 1]
